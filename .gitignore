@@ -1,0 +1,13 @@
+node_modules/
+dist/
+
+.env
+.env.local
+.env.production.local
+.env.*.local
+
+src/server/node_modules/
+src/server/.env
+
+*.log
+.DS_Store

@@ -1,0 +1,48 @@
+.form-honeypot {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  clip: rect(0, 0, 0, 0) !important;
+  white-space: nowrap !important;
+  border: 0 !important;
+  pointer-events: none !important;
+}
+
+.form-status {
+  width: 100%;
+  margin-top: 18px;
+  padding: 14px 16px;
+  border: 1px solid transparent;
+  font-size: 0.94rem;
+  font-weight: 600;
+  line-height: 1.8;
+}
+
+.form-status--loading {
+  color: #0b4f78;
+  border-color: rgba(21, 155, 226, 0.3);
+  background: rgba(21, 155, 226, 0.08);
+}
+
+.form-status--success {
+  color: #17663b;
+  border-color: rgba(28, 160, 91, 0.28);
+  background: rgba(28, 160, 91, 0.09);
+}
+
+.form-status--error {
+  color: #9d2d2d;
+  border-color: rgba(200, 62, 62, 0.28);
+  background: rgba(200, 62, 62, 0.08);
+}
+
+.contact-form__submit:disabled,
+.distribution-submit:disabled {
+  cursor: wait;
+  opacity: 0.66;
+  transform: none !important;
+  pointer-events: none;
+}
