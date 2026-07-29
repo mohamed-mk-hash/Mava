@@ -16,6 +16,27 @@
   --container: min(1180px, calc(100vw - 40px));
 }
 
+
+/* Homepage root: unique class to avoid collisions with global `.app` styles. */
+.home-page {
+  width: 100%;
+  min-width: 0;
+  min-height: 100vh;
+  overflow-x: hidden;
+  color: var(--ink);
+  background: var(--white);
+}
+
+.home-page > main {
+  width: 100%;
+  min-width: 0;
+}
+
+.home-page--ar {
+  direction: rtl;
+  text-align: right;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -2268,16 +2289,16 @@ body {
 
 /* English direction and alignment. */
 
-.app--en {
+.home-page--en {
   direction: ltr;
   text-align: left;
 }
 
-.app--en .scroll-progress {
+.home-page--en .scroll-progress {
   transform-origin: left;
 }
 
-.app--en .hero__overlay {
+.home-page--en .hero__overlay {
   background:
     linear-gradient(
       90deg,
@@ -2294,7 +2315,7 @@ body {
     );
 }
 
-.app--en .hero__grid {
+.home-page--en .hero__grid {
   mask-image: linear-gradient(
     to right,
     #000 0%,
@@ -2303,79 +2324,79 @@ body {
   );
 }
 
-.app--en .hero__rings {
+.home-page--en .hero__rings {
   right: -180px;
   left: auto;
 }
 
-.app--en .hero__eyebrow small {
+.home-page--en .hero__eyebrow small {
   padding-right: 0;
   padding-left: 12px;
   border-right: 0;
   border-left: 1px solid rgba(255, 255, 255, 0.28);
 }
 
-.app--en .hero__side-note {
+.home-page--en .hero__side-note {
   padding: 24px 24px 24px 0;
   border-right: 1px solid rgba(255, 255, 255, 0.24);
   border-left: 0;
   direction: ltr;
 }
 
-.app--en .hero__side-note div {
+.home-page--en .hero__side-note div {
   direction: ltr;
   text-align: left;
 }
 
-.app--en .story-card__number {
+.home-page--en .story-card__number {
   right: 30px;
   left: auto;
 }
 
-.app--en .story-card li {
+.home-page--en .story-card li {
   padding-right: 0;
   padding-left: 25px;
 }
 
-.app--en .story-card li::before {
+.home-page--en .story-card li::before {
   right: auto;
   left: 0;
 }
 
-.app--en .vision-card__quote {
+.home-page--en .vision-card__quote {
   right: 34px;
   left: auto;
 }
 
-.app--en .value-strip__item {
+.home-page--en .value-strip__item {
   border-right: 1px solid rgba(255, 255, 255, 0.1);
   border-left: 0;
 }
 
-.app--en .value-strip__item:last-child {
+.home-page--en .value-strip__item:last-child {
   border-right: 0;
 }
 
-.app--en .product-visual__badge {
+.home-page--en .product-visual__badge {
   right: 2%;
   left: auto;
 }
 
-.app--en .client-card__arrow {
+.home-page--en .client-card__arrow {
   right: 24px;
   left: auto;
 }
 
-.app--en .advantages-section::before {
+.home-page--en .advantages-section::before {
   right: -180px;
   left: auto;
 }
 
-.app--en .quality-card {
+.home-page--en .quality-card {
   direction: ltr;
 }
 
-.app--en .quality-section__overlay {
+.home-page--en .quality-section__overlay {
   background:
     linear-gradient(
       270deg,
@@ -2385,21 +2406,21 @@ body {
     );
 }
 
-.app--en .distribution-visual::before {
+.home-page--en .distribution-visual::before {
   right: auto;
   left: 7%;
 }
 
-.app--en .distribution-visual__image {
+.home-page--en .distribution-visual__image {
   inset: 0 0 6% 16%;
 }
 
-.app--en .distribution-visual__card {
+.home-page--en .distribution-visual__card {
   right: auto;
   left: 0;
 }
 
-.app--en .home-contact-cta::before {
+.home-page--en .home-contact-cta::before {
   right: -150px;
   left: auto;
 }
@@ -2436,7 +2457,7 @@ body {
     justify-content: flex-start;
   }
 
-  .app--en .hero__rings {
+  .home-page--en .hero__rings {
     right: -390px;
     left: auto;
   }

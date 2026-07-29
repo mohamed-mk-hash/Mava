@@ -578,7 +578,7 @@ function HomePage() {
 
   return (
     <div
-      className={`app app--${language}`}
+      className={`home-page home-page--${language}`}
       dir={direction}
     >
       <motion.div
