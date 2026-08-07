@@ -201,6 +201,7 @@ function Navbar({ variant = "overlay" }) {
             aria-label={copy.homeAria}
           >
             <img
+              className="brand__logo"
               src={logo}
               alt="MAVA Water"
             />
@@ -302,6 +303,7 @@ function Navbar({ variant = "overlay" }) {
                   aria-label={copy.homeAria}
                 >
                   <img
+                    className="mobile-menu__logo"
                     src="/assets/mava-logo-white.png"
                     alt="MAVA Water"
                   />
